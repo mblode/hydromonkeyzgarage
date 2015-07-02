@@ -1,16 +1,13 @@
 .navbar {
-  background: color(white);
+  background: $white;
   border: 0;
-  transform: translate3d(0,0,0);
-
-  .container {
-    border-bottom: 1px solid color(black, normal, .12);
-  }
 }
 
 .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-  color: color(black, normal, .54) !important;
+  color: $primary-300 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .navbar-default {
@@ -21,8 +18,7 @@
 
         &:hover,
         &:focus {
-          background-color: color(blue, 300);
-          color: color(white) !important;
+          color: $primary-500 !important;
         }
       }
     }
@@ -31,8 +27,8 @@
       > a,
       > a:hover,
       > a:focus {
-        background-color: color(pink, A100);
-        color: color(white) !important;
+        background-color: $primary-300;
+        color: $primary-500 !important;
       }
     }
 
@@ -40,33 +36,37 @@
       > a,
       > a:hover,
       > a:focus {
-        background-color: color(white);
-        color: color(white);
+        background-color: $primary-500;
+        color: $primary-500;
       }
     }
   }
 
   .navbar-toggle {
-    border-color: color(white);
+    border-color: $primary-300;
 
     &:hover,
     &:focus {
-      background-color: color(white);
+      background-color: $primary-300;
+
+      .icon-bar {
+        background-color: $white;
+      }
     }
 
     .icon-bar {
-      background-color: color(text, primary);
+      background-color: $primary-300;
     }
   }
 
   .navbar-collapse,
   .navbar-form {
-    border-color: color(white);
+    border-color: $white;
   }
 
   .navbar-link {
     &:hover {
-      color: color(white);
+      color: $primary-500;
     }
   }
 }
@@ -77,8 +77,8 @@
       > a,
       > a:hover,
       > a:focus {
-        background-color: color(blue, 300);
-        color: color(white);
+        background-color: $primary-500;
+        color: $white;
       }
     }
   }

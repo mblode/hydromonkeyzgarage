@@ -24,7 +24,9 @@ $fa-enable-utilities: true !default;
 '3-base/responsive';
 
 @import
-'4-layout/navigation';
+'4-layout/generic',
+'4-layout/navigation',
+'4-layout/contact';
 
 @import
 '5-components/button',
