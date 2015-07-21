@@ -1,8 +1,8 @@
 ---
-title: Automotive
-date: 2015-01-15
+title: Tyres
+date: 2015-07-21
 img: "http://placehold.it/1000x1000"
-description: Custom Hydrographic Paint Jobs
+description: Water transfer printing for your tyres.
 tag: Automotive
 ---
 

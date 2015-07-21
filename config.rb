@@ -1,37 +1,18 @@
-###
-# Blog settings
-###
-
-# Time.zone = "UTC"
-set :fonts_dir,  "source/fonts"
-
-activate :bootstrap_navbar
-
-sprockets.append_path File.join root, 'source/javascripts'
-
-activate :autoprefixer do |config|
-  config.browsers = ['last 2 versions']
-end
+Time.zone = "Melbourne"
 
 activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
   blog.name = "work"
+
   blog.prefix = "work"
 
   blog.permalink = "{year}/{month}/{day}/{title}.html"
-  # Matcher for blog source files
-  # blog.sources = "{year}-{month}-{day}-{title}.html"
+
   blog.taglink = "tags/{tag}.html"
   blog.layout = "post"
   blog.summary_separator = /(READMORE)/
   blog.summary_length = 250
-  # blog.year_link = "{year}.html"
-  # blog.month_link = "{year}/{month}.html"
-  # blog.day_link = "{year}/{month}/{day}.html"
-  blog.default_extension = ".md"
 
-  # blog.tag_template = "tag.html"
-  # blog.calendar_template = "calendar.html"
+  blog.default_extension = ".md"
 
   # Enable pagination
   blog.paginate = true
@@ -46,11 +27,24 @@ page "/feed.xml", layout: false
 # Helpers
 ###
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions']
+end
+
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 activate :livereload
+
+set :relative_links, true
+
+activate :directory_indexes
+
+set :fonts_dir,  "source/fonts"
+activate :bootstrap_navbar
+
+sprockets.append_path File.join root, 'source/javascripts'
 
 
 # Methods defined in the helpers block are available in templates
@@ -58,7 +52,6 @@ helpers do
   def nav_active(path)
     current_page.path == path ? {:class => "active"} : {}
   end
-
 end
 
 set :css_dir, 'stylesheets'
@@ -82,11 +75,11 @@ configure :build do
   activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  # set :http_prefix, "/images/"
 
   activate :minify_html
 
-  # activate :imageoptim
+  activate :imageoptim
 
   activate :gzip
 end
@@ -96,5 +89,3 @@ activate :deploy do |deploy|
   deploy.branch = 'gh-pages'
   deploy.build_before = true
 end
-
-activate :directory_indexes
