@@ -59,3 +59,11 @@
   font-size: 21px;
   font-weight: normal;
 }
+
+@media (max-width:767px) {
+  .contact__address,
+  .contact__email {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
