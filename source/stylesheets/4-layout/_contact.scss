@@ -11,6 +11,12 @@
   background: $white;
 }
 
+.who__info {
+  -webkit-font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+}
+
 .contact__title {
   color: $primary-300;
   font-size: 42px;
@@ -32,10 +38,6 @@
   font-size: 24px;
   font-weight: normal;
   margin-top: 35px;
-
-  a {
-    color: $light;
-  }
 }
 
 .contact__overline {

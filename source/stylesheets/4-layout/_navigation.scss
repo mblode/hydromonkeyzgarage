@@ -1,7 +1,9 @@
 .navbar {
   background: $primary-500;
-  border: outside;
+  border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, .12);
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 .navbar-brand,
@@ -9,6 +11,7 @@
   color: $primary-300 !important;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navbar-default {
@@ -19,6 +22,7 @@
 
         &:hover,
         &:focus {
+          background: $primary-300;
           color: $white !important;
         }
       }
@@ -28,8 +32,7 @@
       > a,
       > a:hover,
       > a:focus {
-        background: transparent;
-        border-bottom: $primary-300 4px solid;
+        background: $primary-300;
         color: $white !important;
       }
     }
@@ -63,7 +66,7 @@
 
   .navbar-collapse,
   .navbar-form {
-    border-color: $white;
+    border: 0;
   }
 
   .navbar-link {

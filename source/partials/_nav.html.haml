@@ -1,4 +1,4 @@
-%nav.navbar.navbar-default.navbar-fixed-top
+.navbar.navbar-default
   .container
     .navbar-header
       %button.navbar-toggle{:type => "button", :data => {:toggle => "collapse", :target => "#collapse"}}
@@ -7,14 +7,14 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand{:href => "/"}
-        %img{:style => "height: 180%; margin-top: -6px;", :src => "images/brand.svg"}
+        %img{:style => "height: 130%; margin-top: -2px;", :src => "images/hero-brand.svg"}
     .collapse.navbar-collapse#collapse
       %ul.nav.navbar-nav.navbar-right
         %li{ nav_active('index.html') }
-          %a{:href => "/"} HOME
+          %a{:href => "/"} Home
         %li{ nav_active('work.html') }
-          %a{:href => "/work/"} WORK
+          %a{:href => "/work/"} Work
         %li{ nav_active('about.html') }
-          %a{:href => "/about/"} ABOUT
+          %a{:href => "/about/"} About
         %li{ nav_active('contact.html') }
-          %a{:href => "/contact/"} CONTACT
+          %a{:href => "/contact/"} Contact
