@@ -6,15 +6,19 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "index.html"}
+      = link_to '/index.html', :class => 'navbar-brand' do
         %img{:style => "height: 130%; margin-top: -2px;", :src => "https://upload.wikimedia.org/wikipedia/commons/e/e0/Hero-brand.svg"}
     .collapse.navbar-collapse#collapse
       %ul.nav.navbar-nav.navbar-right
         %li{ nav_active('index.html') }
-          %a{:href => "index.html"} Home
+          = link_to '/index.html' do
+            Home
         %li{ nav_active('work.html') }
-          %a{:href => "work/"} Work
+          = link_to '/work.html' do
+            Work
         %li{ nav_active('about.html') }
-          %a{:href => "about/"} About
+          = link_to '/about.html' do
+            About
         %li{ nav_active('contact.html') }
-          %a{:href => "contact/"} Contact
+          = link_to '/contact.html' do
+            Contact
