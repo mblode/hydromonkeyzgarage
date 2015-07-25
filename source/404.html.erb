@@ -1,0 +1,18 @@
+<%= partial "partials/head" %>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>404 Error &middot; Page Not Found</h1>
+        <p>Sorry, but the page you were trying to view does not exist.</p>
+        <%= link_to 'Let\'s head home', '/index.html', :class => "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+
+  <%= javascript_include_tag "all" %>
+
+</body>
+</html>

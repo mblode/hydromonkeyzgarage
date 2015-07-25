@@ -5,14 +5,28 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.h1,
+.h2,
+.h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
 h4,
 h5,
-h6 {
+h6,
+.h4,
+.h5,
+.h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
+}
+
+a {
+  font-family: 'Opens Sans', sans-serif;
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+  font-family: 'Montserrat', sans-serif;
 }

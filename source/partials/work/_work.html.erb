@@ -1,8 +1,8 @@
-<div class="container-fluid work__bg">
+<article class="container-fluid white__bg">
   <div class="container" >
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="work__title">Our work</h2>
+        <h1>Our work</h1>
       </div>
 
       <div class="col-sm-12">
@@ -16,14 +16,12 @@
       </div>
 
       <% page_articles.each_with_index do |article, i| %>
-       <div class="col-xs-6 col-sm-3">
-         <% link_to article, :class => "" do %>
-           <div class="">
-             <h3 class=""><%= article.title %></h3>
-           </div>
-           <%= image_tag article.data.img, { :class => 'img-responsive' } %>
-         <% end %>
-       </div>
+        <% link_to article, :class => "" do %>
+          <div class="col-sm-4">
+            <h2 class="h3"><%= article.title %></h2>
+            <%= image_tag article.data.img, { :class => 'img-responsive' } %>
+          </div>
+        <% end %>
       <% end %>
 
       <div class="col-sm-12">
@@ -35,9 +33,9 @@
       </div>
 
       <div class="col-sm-12">
-        <div class="gutter--md"></div>
+        <div class="gutter"></div>
       </div>
 
     </div>
   </div>
-</div>
+</article>

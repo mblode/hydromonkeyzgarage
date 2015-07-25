@@ -1,0 +1,85 @@
+.gallery {
+  height: 500px;
+  width: 100%;
+
+  .gallery-cell {
+    height: 100%;
+    width: auto;
+
+    img {
+      height: 100%;
+      max-width: none;
+    }
+  }
+}
+
+.flickity-prev-next-button {
+  background: $white;
+  box-shadow: $bs-1;
+  transition: $trans;
+
+  .no-svg {
+    color: $secondary;
+    transition: $trans;
+  }
+
+  .arrow {
+    fill: $secondary;
+    transition: $trans;
+  }
+
+  &:hover {
+    background: $primary-300;
+
+    .no-svg {
+      color: $white;
+    }
+
+    .arrow {
+      fill: $white;
+    }
+  }
+
+  &:active {
+    background: $primary-300;
+    border-color: $white;
+
+    .no-svg {
+      color: $white;
+    }
+
+    .arrow {
+      fill: $white;
+    }
+  }
+}
+
+.flickity-prev-next-button:active {
+  opacity: 1;
+}
+
+.flickity-page-dots {
+  bottom: 12px;
+
+  .dot {
+    background: $white;
+    border: 2px solid white;
+    box-shadow: $bs-1;
+    height: 14px;
+    opacity: 1;
+    transition: $trans;
+    width: 14px;
+
+    &.is-selected {
+      background: $primary-500;
+    }
+
+    &:hover {
+      background: $primary-300;
+    }
+
+    &:active {
+      background: $primary-300;
+    }
+  }
+}
