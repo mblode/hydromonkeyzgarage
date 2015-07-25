@@ -23,7 +23,7 @@
         &:hover,
         &:focus {
           background: $primary-700;
-          color: $white !important;
+          color: $primary-300 !important;
         }
       }
     }
@@ -33,7 +33,7 @@
       > a:hover,
       > a:focus {
         background: $primary-700;
-        color: $white !important;
+        color: $primary-300 !important;
       }
     }
 
