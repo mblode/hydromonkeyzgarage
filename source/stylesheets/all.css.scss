@@ -13,6 +13,9 @@ $fa-enable-utilities: true !default;
 @import 'font-awesome';
 
 @import
+'1-tools/flickity';
+
+@import
 '2-utils/variables',
 '2-utils/functions',
 '2-utils/mixins',
@@ -28,8 +31,8 @@ $fa-enable-utilities: true !default;
 '4-layout/navigation',
 '4-layout/contact',
 '4-layout/work',
-'4-layout/about',
 '4-layout/footer',
+'4-layout/styles',
 '4-layout/header';
 
 @import

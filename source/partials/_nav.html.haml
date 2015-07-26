@@ -1,4 +1,4 @@
-.navbar.navbar-default
+%nav.navbar.navbar-default
   .container
     .navbar-header
       %button.navbar-toggle{:type => "button", :data => {:toggle => "collapse", :target => "#collapse"}}
@@ -7,7 +7,7 @@
         %span.icon-bar
         %span.icon-bar
       = link_to '/index.html', :class => 'navbar-brand' do
-        %img{:style => "height: 130%; margin-top: -2px;", :src => "https://upload.wikimedia.org/wikipedia/commons/e/e0/Hero-brand.svg"}
+        = image_tag 'hero-brand.svg', :style => "height: 130%; margin-top: -2px;", :alt => "HydroMonkeyz Garage"
     .collapse.navbar-collapse#collapse
       %ul.nav.navbar-nav.navbar-right
         %li{ nav_active('index.html') }

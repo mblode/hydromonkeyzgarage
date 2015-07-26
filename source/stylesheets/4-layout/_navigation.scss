@@ -22,8 +22,8 @@
 
         &:hover,
         &:focus {
-          background: $primary-300;
-          color: $white !important;
+          background: $primary-700;
+          color: $primary-300 !important;
         }
       }
     }
@@ -32,8 +32,8 @@
       > a,
       > a:hover,
       > a:focus {
-        background: $primary-300;
-        color: $white !important;
+        background: $primary-700;
+        color: $primary-300 !important;
       }
     }
 

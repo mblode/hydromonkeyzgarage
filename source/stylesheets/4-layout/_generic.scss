@@ -1,41 +1,46 @@
-body {
-  background: #fff;
-}
-
-.container {
-  clear: both;
-  display: block;
-}
-
 .container-fluid {
   padding: 0;
 }
 
-hr {
-  margin: 0;
-}
-
-.gutter--md {
+.gutter {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 30px;
-}
-
-.gutter--xs {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 10px;
+  height: 20px;
 }
 
 .gutter--sm {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 15px;
+  height: 10px;
+}
+
+.gutter--responsive {
+  display: none;
+
+  @media (max-width:767px) {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 15px;
+  }
 }
 
 .white {
   color: $light;
+}
+
+.primary__bg {
+  background: $primary-500;
+}
+
+
+.white__bg {
+  background: $white;
+}
+
+.light__bg {
+  background: $light;
 }
