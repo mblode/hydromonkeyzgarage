@@ -7,18 +7,12 @@
         %span.icon-bar
         %span.icon-bar
       = link_to '/index.html', :class => 'navbar-brand' do
-        = image_tag 'hero-brand.svg', :style => "height: 130%; margin-top: -2px;", :alt => "HydroMonkeyz Garage"
+        = image_tag 'hmg.svg', :style => "height: 130%; margin-top: -2px;", :alt => "HydroMonkeyz Garage"
     .collapse.navbar-collapse#collapse
       %ul.nav.navbar-nav.navbar-right
         %li{ nav_active('index.html') }
           = link_to '/index.html' do
             Home
-        %li{ nav_active('work.html') }
-          = link_to '/work.html' do
-            Work
-        %li{ nav_active('about.html') }
-          = link_to '/about.html' do
-            About
-        %li{ nav_active('contact.html') }
-          = link_to '/contact.html' do
-            Contact
+        %li
+          = link_to 'http://www.gumtree.com.au/s-seller/Riko/1011425121' do
+            Store

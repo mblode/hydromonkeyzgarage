@@ -3,10 +3,15 @@
 }
 
 .header__logo {
-  max-width: 400px;
   width: 100%;
+  height: auto;
 }
 
 .header__brand {
   width: 100%;
+}
+
+.header__quote {
+  color: $primary-700;
+  font-weight: bold;
 }

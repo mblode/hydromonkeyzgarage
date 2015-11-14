@@ -10,6 +10,12 @@
   }
 }
 
+.contact__title {
+  @media (max-width:767px) {
+    text-align: center;
+  }
+}
+
 .contact__social {
   transition: $trans;
 

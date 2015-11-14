@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   $('.gallery').flickity({
     accessibility: true,
-    autoPlay: 3000,
+    autoPlay: true,
     cellAlign: 'center',
     cellSelector: undefined,
     contain: false,
@@ -17,13 +17,12 @@ $(document).ready(function() {
     friction: 0.2,
     initialIndex: 0,
     imagesLoaded: true,
-    percentPosition: true,
     prevNextButtons: true,
     pageDots: true,
     resize: true,
-    rightToLeft: false,
     setGallerySize: true,
     watchCSS: false,
     wrapAround: true
   });
+
 });

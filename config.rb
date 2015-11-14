@@ -1,5 +1,3 @@
-Time.zone = "Melbourne"
-
 activate :blog do |blog|
   blog.name = "work"
 
@@ -20,67 +18,40 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
 end
 
+Time.zone = "Melbourne"
 
 page "/feed.xml", layout: false
-
-###
-# Helpers
-###
 
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions']
 end
 
-# Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
 activate :livereload
-
-set :relative_links, true
-
 activate :directory_indexes
-
-set :fonts_dir,  "source/fonts"
 activate :bootstrap_navbar
 
 sprockets.append_path File.join root, 'source/javascripts'
 
+set :relative_links, true
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
 
-# Methods defined in the helpers block are available in templates
+
 helpers do
   def nav_active(path)
     current_page.path == path ? {:class => "active"} : {}
   end
 end
 
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
-
-# Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
+  activate :asset_hash
   activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/images/"
-
-  activate :minify_html
-
   activate :imageoptim
-
+  activate :minify_html
   activate :gzip
 end
 
