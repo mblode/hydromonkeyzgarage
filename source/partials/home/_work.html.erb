@@ -16,8 +16,8 @@
       </div>
 
       <% page_articles.each_with_index do |article, i| %>
-        <% link_to article, :class => "" do %>
-          <div class="col-xs-6 col-sm-3">
+        <% link_to article, :class => "work" do %>
+          <div class="col-xs-6 col-sm-4 col-md-3">
             <h2 class="h3"><%= article.title %></h2>
             <%= image_tag article.data.img, { :class => 'img-responsive' } %>
           </div>

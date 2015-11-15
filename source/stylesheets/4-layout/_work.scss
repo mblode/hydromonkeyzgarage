@@ -1,0 +1,12 @@
+.work {
+  img {
+    opacity: 1;
+    transition: $trans;
+  }
+
+  &:hover {
+    img {
+      opacity: .6;
+    }
+  }
+}
