@@ -1,5 +1,5 @@
 .gallery-cell {
-  height: 400px;
+  height: 300px;
   overflow: hidden;
 
   img {
@@ -10,7 +10,7 @@
 
 @media (max-width:767px) {
   .gallery-cell {
-    height: 250px;
+    height: 200px;
   }
 }
 
