@@ -27,11 +27,12 @@ activate :autoprefixer do |config|
 end
 
 activate :automatic_image_sizes
-activate :livereload
+# activate :livereload
 activate :directory_indexes
 activate :bootstrap_navbar
 
-sprockets.append_path File.join root, 'source/javascripts'
+activate :sprockets
+sprockets.append_path File.join(root, "source/javascripts'")
 
 set :relative_links, true
 set :css_dir, 'stylesheets'
@@ -50,13 +51,13 @@ configure :build do
   activate :minify_javascript
   activate :relative_assets
   activate :asset_hash
-  activate :imageoptim
+  # activate :imageoptim
   activate :minify_html
   activate :gzip
 end
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'gh-pages'
-  deploy.build_before = true
-end
+# activate :deploy do |deploy|
+#   deploy.method = :git
+#   deploy.branch = 'gh-pages'
+#   deploy.build_before = true
+# end

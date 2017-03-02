@@ -8,7 +8,11 @@ $(document).ready(function() {
 
   $('.gallery').flickity({
     imagesLoaded: true,
-    wrapAround: true
+    wrapAround: true,
+    accessibility: true,
+    cellAlign: 'center',
+    autoPlay: true,
+    contain: true,
   });
 
 });
