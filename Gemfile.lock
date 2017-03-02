@@ -89,6 +89,8 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    middleman-gh-pages (0.3.1)
+      rake (> 0.9.3)
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
@@ -105,6 +107,7 @@ GEM
     parallel (1.10.0)
     public_suffix (2.0.5)
     rack (2.0.1)
+    rake (12.0.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
@@ -132,6 +135,7 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-blog
   middleman-bootstrap-navbar
+  middleman-gh-pages
   middleman-minify-html
   middleman-sprockets (~> 4.0.0.rc)
 

@@ -15,3 +15,4 @@ gem 'middleman-bootstrap-navbar'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 gem "middleman-sprockets", "~> 4.0.0.rc"
+gem 'middleman-gh-pages'
